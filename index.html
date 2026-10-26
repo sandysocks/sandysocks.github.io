@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<section class="intro">
+  <img class="avatar" src="{{ '/assets/me.jpg' | relative_url }}" alt="Photo of Sandy">
+  <div>
+    <h1>Hi, I'm Sandy.</h1>
+    <p>I'm an Australian geneticist doing a PhD at the University of Cambridge, where I combine genomic surveillance and mathematical modelling to inform public health responses to emerging mosquito-borne disease in East Africa. Outside the lab, I've co-founded a not-for-profit coffee company and the Cambridge Biosecurity Hub, a not-for-profit that runs programmes to help experienced researchers and skilled PhDs move into important biosecurity work. I write here about science, building things, and whatever I'm curious about at the moment.</p>
+  </div>
+</section>
+
+<section class="now">
+  <h2>What I'm working on now</h2>
+  <ul>
+    <li>Currently busy finishing off my PhD at Cambridge, and thinking about what work needs to be done in biosecurity afterwards</li>
+  </ul>
+</section>
+
+<section class="posts">
+  <h2>Latest posts</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit:5 %}
+    <li>
+      <span class="post-date">{{ post.date | date: "%-d %b %Y" }}</span>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

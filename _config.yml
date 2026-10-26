@@ -1,0 +1,5 @@
+title: Sandy
+description: Notes, projects and things I'm thinking about.
+url: "https://sandysocks.github.io"
+permalink: /:year/:title/
+markdown: kramdown
